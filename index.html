@@ -67,12 +67,12 @@
       const result = document.getElementById('result');
       let isSpinning = false;
 
-      const prizes = [
-        'Music',
-        'Writing',
+      const projects = [
+        'Practice Singing',
         'Drawing',
-        'Create website',
-        'Learn to cook',
+        'Computer Science Courses',
+        'Writing',
+        'Photography',
       ];
 
       function spinWheel() {
@@ -86,7 +86,7 @@
 
         setTimeout(() => {
           const prizeIndex = Math.floor(((360 - finalRotation) % 360) / 45);
-          result.textContent = `Result: ${prizes[prizeIndex]}`;
+          result.textContent = `Result: ${projects[prizeIndex]}`;
           isSpinning = false;
         }, 5000);
       }
